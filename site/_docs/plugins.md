@@ -11,7 +11,7 @@ having to modify the Jekyll source itself.
 <div class="note info">
   <h5>Plugins on GitHub Pages</h5>
   <p>
-    <a href="http://pages.github.com/">GitHub Pages</a> is powered by Jekyll.
+    <a href="https://pages.github.com/">GitHub Pages</a> is powered by Jekyll.
     However, all Pages sites are generated using the <code>--safe</code> option
     to disable custom plugins for security reasons. Unfortunately, this means
     your plugins won’t work if you’re deploying to GitHub Pages.<br><br>
@@ -311,7 +311,7 @@ Commands should implement this single class method:
       </td>
       <td><p>
         This method accepts one parameter, the
-        <code><a href="http://github.com/jekyll/mercenary#readme">Mercenary::Program</a></code>
+        <code><a href="https://github.com/jekyll/mercenary#readme">Mercenary::Program</a></code>
         instance, which is the Jekyll program itself. Upon the program,
         commands may be created using the above syntax. For more details,
         visit the Mercenary repository on GitHub.com.
@@ -738,6 +738,7 @@ LESS.js files during generation.
 - [Jekyll-Umlauts by Arne Gockeln](https://github.com/webchef/jekyll-umlauts): This generator replaces all german umlauts (äöüß) case sensitive with html.
 - [Jekyll Flickr Plugin](https://github.com/lawmurray/indii-jekyll-flickr) by [Lawrence Murray](http://www.indii.org): Generates posts for photos uploaded to a Flickr photostream.
 - [Jekyll::Paginate::Category](https://github.com/midnightSuyama/jekyll-paginate-category): Pagination Generator for Jekyll Category.
+- [AMP-Jekyll by Juuso Mikkonen](https://github.com/juusaw/amp-jekyll): Generate [Accelerated Mobile Pages](https://www.ampproject.org) of Jekyll posts.
 
 #### Converters
 
@@ -844,6 +845,7 @@ LESS.js files during generation.
 - [Jekyll-Youtube](https://github.com/dommmel/jekyll-youtube)  A Liquid tag that embeds Youtube videos. The default emded markup is responsive but you can also specify your own by using an include/partial.
 - [Jekyll Flickr Plugin](https://github.com/lawmurray/indii-jekyll-flickr) by [Lawrence Murray](http://www.indii.org): Embeds Flickr photosets (albums) as a gallery of thumbnails, with lightbox links to larger images.
 - [jekyll-figure](https://github.com/paulrobertlloyd/jekyll-figure): A liquid tag for Jekyll that generates `<figure>` elements.
+- [Jekyll Video Embed](https://github.com/eug/jekyll-video-embed): It provides several tags to easily embed videos (e.g. Youtube, Vimeo, UStream and Ted Talks)
 
 #### Collections
 
@@ -859,6 +861,7 @@ LESS.js files during generation.
 - [Growl Notification Generator by Tate Johnson](https://gist.github.com/490101): Send Jekyll notifications to Growl.
 - [Growl Notification Hook by Tate Johnson](https://gist.github.com/525267): Better alternative to the above, but requires his “hook” fork.
 - [Related Posts by Lawrence Woodman](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin): Overrides `site.related_posts` to use categories to assess relationship.
+- [jekyll-tagging-related_posts](https://github.com/toshimaru/jekyll-tagging-related_posts): Jekyll related_posts function based on tags (works on Jekyll3).
 - [Tiered Archives by Eli Naeher](https://gist.github.com/88cda643aa7e3b0ca1e5): Create tiered template variable that allows you to group archives by year and month.
 - [Jekyll-localization](https://github.com/blackwinter/jekyll-localization): Jekyll plugin that adds localization features to the rendering engine.
 - [Jekyll-rendering](https://github.com/blackwinter/jekyll-rendering): Jekyll plugin to provide alternative rendering engines.

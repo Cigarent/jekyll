@@ -1,27 +1,66 @@
 ## HEAD
 
+### Minor Enhancements
+
+  * Stop testing with Ruby 2.0.x, which is EOL'd. (#4381)
+  * Allow collections to have documents that have no file extension (#4545)
+  * Add size property to group_by result (#4557)
+
 ### Bug Fixes
 
-  * Fix #4427: Make our @config hash symbol accessible. (#4428)
-  * `Jekyll.sanitized_path`: sanitizing a questionable path should handle tildes (#4492)
+  * Site template: Escape title and description where it is used in HTML (#4606)
+  * Document#date: drafts which have no date should use source file mtime (#4611)
+  * Filters#time: clone an input Time so as to be non-destructive (#4590)
+  * Doctor: fix issue where `--config` wasn't a recognized flag (#4598)
+  * Ensures related_posts are only set for a post (#4620)
+
+### Development Fixes
+
+  * Add project maintainer profile links (#4591)
+  * Fix state leakage in Kramdown test (#4618)
+
+### Site Enhancements
+
+  * Add jekyll-seo-tag, jekyll-avatar, and jekyll-sitemap to the site (#4553)
+  * Add Google search query to /docs/help/ (#4589)
+  * Upgrading, documentation (#4597)
+  * Add 'view source' entry (#4602)
+  * Add jekyll-video-embed to list of third-party plugins. (#4621)
+
+## 3.1.2 / 2016-02-19
 
 ### Minor Enhancements
 
-  * Include .rubocop.yml in Gem (#4437)
-  * LiquidRenderer#parse: parse with line numbers. (#4452)
+  * Include `.rubocop.yml` in Gem (#4437)
+  * `LiquidRenderer#parse`: parse with line numbers. (#4452)
+  * Add consistency to the no-subcommand deprecation message (#4505)
+
+### Bug Fixes
+
+  * Fix syntax highlighting in kramdown by making `@config` accessible in the Markdown converter. (#4428)
+  * `Jekyll.sanitized_path`: sanitizing a questionable path should handle tildes (#4492)
+  * Fix `titleize` so already capitalized words are not dropped (#4525)
+  * Permalinks which end in a slash should always output HTML (#4546)
+
+### Development Fixes
+
+  * Require at least cucumber version 2.1.0 (#4514)
 
 ### Site Enhancements
 
   * Add jekyll-toc plugin (#4429)
   * Docs: Quickstart - added documentation about the `--force` option (#4410)
   * Fix broken links to the Code of Conduct (#4436)
-  * upgrade notes: mention trailing slash in permalink; fixes #4440 (#4455)
+  * Upgrade notes: mention trailing slash in permalink; fixes #4440 (#4455)
   * Add hooks to the plugin categories toc (#4463)
   * [add note] Jekyll 3 requires newer version of Ruby. (#4461)
   * Fix typo in upgrading docs (#4473)
   * Add note about upgrading documentation on jekyllrb.com/help/ (#4484)
   * Update Rake link (#4496)
   * Update & prune the short list of example sites (#4374)
+  * Added amp-jekyll plugin to plugins docs (#4517)
+  * A few grammar fixes (#4512)
+  * Correct a couple mistakes in structure.md (#4522)
 
 ## 3.1.1 / 2016-01-29
 
@@ -139,11 +178,11 @@
 
 ### Bug Fixes
 
-* Fix extension weirdness with folders (#4493)
-* EntryFilter: only include 'excluded' log on excluded files (#4479)
-* `Jekyll.sanitized_path`: escape tildes before sanitizing a questionable path (#4468)
-* `LiquidRenderer#parse`: parse with line numbers (#4453)
-* `Document#<=>`: protect against nil comparison in dates. (#4446)
+  * Fix extension weirdness with folders (#4493)
+  * EntryFilter: only include 'excluded' log on excluded files (#4479)
+  * `Jekyll.sanitized_path`: escape tildes before sanitizing a questionable path (#4468)
+  * `LiquidRenderer#parse`: parse with line numbers (#4453)
+  * `Document#<=>`: protect against nil comparison in dates. (#4446)
 
 ## 3.0.2 / 2016-01-20
 
